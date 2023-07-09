@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/fabada?styles=31638"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Lecturna - Landing Page</title>
+  </head>
+  <body>
+    <header id="navbar">
+      <div class="container">
+        <div class="navbar-logo">
+          <img src="lecturnalogo1.svg" alt="logo" />
+        </div>
+        <div class="navbar-items">
+          <div class="items"><a href="#home" id="items">Home</a></div>
+          <div class="items"><a href="#course" id="items">Course</a></div>
+          <div class="items">
+            <a href="#instructor" id="items">Instructor</a>
+          </div>
+          <div class="items">
+            <a href="#testimonial" id="items">Testimony</a>
+          </div>
+          <div class="items"><a href="#abs" id="items">About Us</a></div>
+          <div class="items">
+            <a href="#register" id="btn-reg">Register</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Section Home -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 hero-content">
+            <h1 data-aos="fade-right" data-aos-duration="1200">LECTURNA</h1>
+            <p data-aos="fade-right" data-aos-duration="1200">
+              Empowering young minds through fun, interactive coding courses.
+              Join us, and let's code the future!
+            </p>
+            <a
+              href="#course"
+              class="btn btn-primary start-now"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              >START NOW!</a
+            >
+          </div>
+          <div class="col-md-6" data-aos="fade-left" data-aos-duration="1200">
+            <img
+              src="cartoon3.png"
+              alt="animation"
+              class="img-fluid animated-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Course -->
+    <section id="course" class="container mt-5">
+      <h2 id="exp-h2" class="section-title text-center">Explore Our Course</h2>
+      <div class="row">
+        <div id="course-card" class="col-lg-4 col-md-6 mb-4">
+          <!-- Card 1 -->
+          <div
+            class="card text-center"
+            data-aos="flip-left"
+            data-aos-duration="900"
+          >
+            <img src="course1.png" class="card-img-top" alt="Course image 1" />
+            <div class="card-body">
+              <div class="course-program">Course Program</div>
+              <h5 class="card-title">Web Programming</h5>
+              <p class="card-text">For Age: 15-17</p>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  class="btn-details"
+                  data-bs-toggle="modal"
+                  data-bs-target="#course1Modal"
+                >
+                  See Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="course-card" class="col-lg-4 col-md-6 mb-4">
+          <!-- Card 2 -->
+          <div
+            class="card text-center"
+            data-aos="flip-left"
+            data-aos-duration="900"
+          >
+            <img src="course2.png" class="card-img-top" alt="Course image 2" />
+            <div class="card-body">
+              <div class="course-program">Course Program</div>
+              <h5 class="card-title">Mobile Programming</h5>
+              <p class="card-text">For Age: 13-16</p>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  class="btn-details"
+                  data-bs-toggle="modal"
+                  data-bs-target="#course2Modal"
+                >
+                  See Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="course-card" class="col-lg-4 col-md-6 mb-4">
+          <!-- Card 3 -->
+          <div
+            class="card text-center"
+            data-aos="flip-left"
+            data-aos-duration="900"
+          >
+            <img src="course3.png" class="card-img-top" alt="Course image 3" />
+            <div class="card-body">
+              <div class="course-program">Course Program</div>
+              <h5 class="card-title">Visual & Text Programming</h5>
+              <p class="card-text">For Age: 7-13 & For Age: 13-16</p>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  class="btn-details"
+                  data-bs-toggle="modal"
+                  data-bs-target="#course3Modal"
+                >
+                  See Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modal for Course 1 -->
+    <div
+      class="modal fade"
+      id="course1Modal"
+      tabindex="-1"
+      aria-labelledby="course1ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #edb230">
+            <h5 class="modal-title" id="course1ModalLabel">Web Programming</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="course1.png"
+                  alt="Course Image"
+                  class="img-fluid mb-3 float-md-start"
+                />
+              </div>
+              <div class="col-md-6">
+                <table
+                  class="table table-hover table-bordered"
+                  style="
+                    background-color: #edb230;
+                    border-color: #1a1a1a;
+                    margin-top: 10px;
+                  "
+                >
+                  <tr>
+                    <td><b>Session</b></td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td><b>Class Schedule</b></td>
+                    <td>Monday, Wednesday, & Friday (19.30 WIB)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Age</b></td>
+                    <td>15 - 17 years old</td>
+                  </tr>
+                  <tr>
+                    <td><b>Level</b></td>
+                    <td>Beginner, Intermediate, Advanced</td>
+                  </tr>
+                </table>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-modal-reg"
+                  data-bs-dismiss="modal"
+                  onclick="navigateToRegister();"
+                >
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Course 2 -->
+    <div
+      class="modal fade"
+      id="course2Modal"
+      tabindex="-1"
+      aria-labelledby="course1ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #edb230">
+            <h5 class="modal-title" id="course2ModalLabel">
+              Mobile Programming
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="course2.png"
+                  alt="Course Image"
+                  class="img-fluid mb-3 float-md-start"
+                />
+              </div>
+              <div class="col-md-6">
+                <table
+                  class="table table-hover table-bordered"
+                  style="
+                    background-color: #edb230;
+                    border-color: #1a1a1a;
+                    margin-top: 10px;
+                  "
+                >
+                  <tr>
+                    <td><b>Session</b></td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td><b>Class Schedule</b></td>
+                    <td>Friday (19.30 WIB)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Age</b></td>
+                    <td>13 - 16 years old</td>
+                  </tr>
+                  <tr>
+                    <td><b>Course Content</b></td>
+                    <td>MiT Inventor App</td>
+                  </tr>
+                </table>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-modal-reg"
+                  data-bs-dismiss="modal"
+                  onclick="navigateToRegister();"
+                >
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for Course 3 -->
+    <div
+      class="modal fade"
+      id="course3Modal"
+      tabindex="-1"
+      aria-labelledby="course1ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #edb230">
+            <h5 class="modal-title" id="course3ModalLabel">
+              Visual & Text Programming
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="course3.png"
+                  alt="Course Image"
+                  class="img-fluid mb-3 float-md-start"
+                />
+              </div>
+              <div class="col-md-6">
+                <table
+                  class="table table-hover table-bordered"
+                  style="
+                    background-color: #edb230;
+                    border-color: #1a1a1a;
+                    margin-top: 10px;
+                  "
+                >
+                  <tr>
+                    <td><b>Session</b></td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td><b>Class Schedule</b></td>
+                    <td>Tuesday & Friday (19.30 WIB)</td>
+                  </tr>
+                  <tr>
+                    <td><b>Course</b></td>
+                    <td>Visual Programming using Scratch (7 - 13 years Old)</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Text Programming using Roblox (13-16 Years Old)</td>
+                  </tr>
+                </table>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-modal-reg"
+                  data-bs-dismiss="modal"
+                  onclick="navigateToRegister();"
+                >
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section Instructor -->
+    <section id="instructor" class="container mt-5">
+      <h2 class="section-title text-center" data-aos="zoom-in">
+        Meet Our Instructor
+      </h2>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner instructor-row" data-aos="zoom-in">
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="instructor-card text-center">
+                  <div class="instructor-image">
+                    <img
+                      src="instructor1.png"
+                      class="rounded-circle"
+                      alt="Instructor image 1"
+                      style="margin-left: -10px;"
+                    />
+                  </div>
+                  <div
+                    class="instructor-info"
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                  >
+                    <h5 class="instructor-name">Jackie Donaldson</h5>
+                    <p class="instructor-title">Web Programming<br />Expert</p>
+                    <p class="instructor-experience">
+                      Meet Jackie, our web programming expert, guiding you
+                      through the world of web development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="instructor-card text-center">
+                  <div class="instructor-image">
+                    <img
+                      src="instructor2.png"
+                      class="rounded-circle"
+                      alt="Instructor image 2"
+                      style="width: 360px; height: 370px"
+                    />
+                  </div>
+                  <div
+                    class="instructor-info"
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                  >
+                    <h5 class="instructor-name">Anderson Barnabas</h5>
+                    <p class="instructor-title">
+                      Mobile Programming<br />Expert
+                    </p>
+                    <p class="instructor-experience">
+                      Introducing Anderson, our mobile programming expert, ready
+                      to help you unlock the potential of mobile app
+                      development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="instructor-card text-center">
+                  <div class="instructor-image">
+                    <img
+                      src="instructor3.png"
+                      class="rounded-circle"
+                      alt="Instructor image 3"
+                      style="width: 300px; height: 370px"
+                    />
+                  </div>
+                  <div
+                    class="instructor-info"
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                  >
+                    <h5 class="instructor-name">Melva Caitlin</h5>
+                    <p class="instructor-title">
+                      Visual & Text Programming<br />Expert
+                    </p>
+                    <p class="instructor-experience">
+                      Discover Melva, our expert in visual and text programming,
+                      bringing creativity and innovation to your coding journey.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- Card 4 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="instructor-card text-center">
+                  <div class="instructor-image">
+                    <img
+                      src="instructor4.png"
+                      class="rounded-circle"
+                      alt="Instructor image 3"
+                      style="width: 360px; height: 370px"
+                    />
+                    <!-- style="width: 360px; height: 440px; margin-top: -100px" -->
+                  </div>
+                  <div
+                    class="instructor-info"
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    style="margin-bottom: 20px;"
+                  >
+                    <h5 class="instructor-name">Andi Setya</h5>
+                    <p class="instructor-title">Web Programming<br />Expert</p>
+                    <p class="instructor-experience">
+                      Andi Setya is Expert in game design, development, and
+                      teaching, dedicated to helping students excel.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="instructor-card text-center">
+                  <div class="instructor-image">
+                    <img
+                      src="instructor5.png"
+                      class="rounded-circle"
+                      alt="Instructor image 3"
+                      style="
+                        width: 440px;
+                        height: 380px;
+                        margin-left: -40px;
+                      "
+                    />
+                  </div>
+                  <div
+                    class="instructor-info" 
+                    style="margin-bottom: 20px;"
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                  >
+                    <h5 class="instructor-name">Bima Cihuy</h5>
+                    <p class="instructor-title">
+                      Mobile Programming<br />Expert
+                    </p>
+                    <p class="instructor-experience">
+                      Bima Cihuy instructors inspire students in mobile
+                      programming and game development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="instructor-card text-center">
+                  <div class="instructor-image">
+                    <img
+                      src="instructor6.png"
+                      class="rounded-circle"
+                      alt="Instructor image 3"
+                      style="
+                        width: 400px;
+                        height: 380px; 
+                        margin-left: -25px
+                        "
+                    />
+                  </div>
+                  <div
+                    class="instructor-info"
+                    data-aos="fade-down"
+                    data-aos-duration="1200"
+                    style="margin-bottom: -10px;"
+                  >
+                    <h5 class="instructor-name">Lionel Ronaldo</h5>
+                    <p class="instructor-title">
+                      Visual & Text Programming<br />Expert
+                    </p>
+                    <p class="instructor-experience">
+                      Lionel Ronaldo is a talented software developer with
+                      expertise in JavaScript. He creates interactive and
+                      dynamic web applications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+          style="margin-top: 20px; margin-right: 20px"
+        >
+          <span class="carousel-control-prev-icon">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+          style="margin-top: 20px; margin-right: 20px"
+        >
+          <span class="carousel-control-next-icon">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Section Testimonials -->
+    <section id="testimonial" class="container mt-5">
+      <h2 class="section-title text-center" data-aos="zoom-in">Testimonials</h2>
+      <div
+        id="testimonialCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+        data-aos="zoom-out"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="testimonial-card">
+                  <img
+                    class="testimonial-image"
+                    src="testi1.png"
+                    alt="Testimonial 1"
+                  />
+                  <h3 class="testimonial-name">John David</h3>
+                  <p class="testimonial-description">
+                    “I feel very proud when I successfully complete my first
+                    coding project. This website gave me a very helpful step by
+                    step guide”
+                  </p>
+                  <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="testimonial-card">
+                  <img
+                    class="testimonial-image"
+                    src="testi2.png"
+                    alt="Testimonial 2"
+                  />
+                  <h3 class="testimonial-name">Elizabeth Smith</h3>
+                  <p class="testimonial-description">
+                    “This coding learning website is very fun and interactive
+                    for kids. My son is really enjoying the learning process!“
+                  </p>
+                  <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="testimonial-card">
+                  <img
+                    class="testimonial-image"
+                    src="testi3.png"
+                    alt="Testimonial 3"
+                  />
+                  <h3 class="testimonial-name">Daniel Walker</h3>
+                  <p class="testimonial-description">
+                    “I am very impressed with the teaching methods presented on
+                    this website. My son learns to code easily and quickly!“
+                  </p>
+                  <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="testimonial-card">
+                  <img
+                    class="testimonial-image"
+                    src="testi4.png"
+                    alt="Testimonial 4"
+                  />
+                  <h3 class="testimonial-name">Li Mei</h3>
+                  <p class="testimonial-description">
+                    “This coding learning website offers a well-structured
+                    curriculum and interesting content. My son is constantly
+                    inspired to learn more!”
+                  </p>
+                  <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="testimonial-card">
+                  <img
+                    class="testimonial-image"
+                    src="testi5.png"
+                    alt="Testimonial 5"
+                  />
+                  <h3 class="testimonial-name">Christopher Martinez</h3>
+                  <p class="testimonial-description">
+                    “This website provides a kid-friendly approach and makes
+                    coding look so simple. My child is getting excited about
+                    learning!”
+                  </p>
+                  <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="testimonial-card">
+                  <img
+                    class="testimonial-image"
+                    src="testi6.png"
+                    alt="Testimonial 6"
+                  />
+                  <h3 class="testimonial-name">Liu Jie</h3>
+                  <p class="testimonial-description">
+                    “This website is so much fun! I can learn coding in a fun
+                    and interactive way.”
+                  </p>
+                  <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon">
+            <i class="fas fa-chevron-left"></i>
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon">
+            <i class="fas fa-chevron-right"></i>
+          </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Section Register -->
+    <section id="register" class="container mt-5">
+      <div
+        class="image-container"
+        data-aos="fade-right"
+        data-aos-duration="1200"
+      >
+        <img src="regist-image.svg" alt="regist-image" />
+      </div>
+      <div class="box-register" data-aos="fade-down" data-aos-duration="1200">
+        <div class="title">
+          <h3 class="get-disc">
+            Grab the discount before the<br />price goes up!
+          </h3>
+          <h4 class="sub-head-disc">
+            Register now for an instant <span>50% off</span> and affordable
+            learning
+          </h4>
+        </div>
+        <div class="form-register">
+          <div class="input-f">
+            <div class="custom-select">
+              <select name="education" id="edu-cat">
+                <option value="" disabled selected>Education Category</option>
+                <option value="web">Web Programming</option>
+                <option value="mobile">Mobile Programming</option>
+                <option value="vis-text">Visual & Text Programming</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-f">
+            <form action="#">
+              <div class="input-f">
+                <input type="text" class="input" placeholder="Student Name" />
+              </div>
+              <div class="input-f">
+                <input type="text" class="input" placeholder="Email" />
+              </div>
+              <div class="input-f">
+                <input type="text" class="input" placeholder="Phone Number" />
+              </div>
+            </form>
+          </div>
+          <div class="btn-reg">
+            <button id="button-reg">REGISTER NOW !</button>
+          </div>
+        </div>
+      </div>
+      <span class="contact" data-aos="fade-up">
+        <span class="items-c">
+          <img src="phone-icon.svg" alt="phone" id="telp-cuy" /><span
+            class="phones"
+            ><label for="phone" id="telp" class="phones"
+              >+62 859-52-889-899</label
+            ></span
+          >
+        </span>
+        <span class="items-c">
+          <img src="instaa-icon2.svg" alt="ig" id="ig-cuy" /><span class="igs"
+            ><label for="insta"> @lecturna.id </label></span
+          ></span
+        >
+        <span class="items-c">
+          <img src="mail-icon.svg" alt="mail" id="mail-cuy" /><span class="mail"
+            ><label for="email" class="mails"
+              >lecturna.id@gmail.com</label
+            ></span
+          ></span
+        >
+      </span>
+    </section>
+    <!-- Section About Us -->
+    <section class="about-us" id="abs">
+      <h2
+        id="aus"
+        class="section-title text-center"
+        data-aos="zoom-in-down"
+        data-aos-duration="1200"
+      >
+        About Us
+      </h2>
+      <div class="img-abs">
+        <img src="lecturnalogo1.svg" alt="logo" / data-aos="zoom-in-down"
+        data-aos-duration="1200">
+      </div>
+      <div class="isi-txt" data-aos="fade-up" data-aos-duration="1800">
+        <p>
+          Lecturna offers a coding course specifically designed to assist
+          children in acquiring the skills necessary for creating websites,
+          developing mobile apps, and engaging in game development.
+        </p>
+        <p>
+          We prioritize teaching children between the ages of 7 and 17, enabling
+          them to gain an early advantage in their future coding projects. Our
+          courses are carefully designed to provide an engaging and interactive
+          learning experience, ensuring that children can fully maximize their
+          potential.
+        </p>
+        <p>
+          We firmly believe that coding is a valuable skill for children to
+          learn, and we are enthusiastic about nurturing their skill
+          development.
+        </p>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        if (window.pageYOffset > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var myCarousel = document.querySelector("#testimonialCarousel");
+        var carousel = new bootstrap.Carousel(myCarousel, {
+          interval: 3000,
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function navigateToRegister() {
+        var element = document.getElementById("register");
+        element.scrollIntoView({behavior: "smooth"});
+      }
+      </script>
+  </body>
+</html>
